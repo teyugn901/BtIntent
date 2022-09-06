@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/ic_wave"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/profilelogo_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"/>
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/profilelogo_image"
+                android:includeFontPadding="false"
+                android:paddingBottom="15dp"
+                android:text="NGUYEN LE THAO NGUYET"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/full_name"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-19dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/profilelogo_image"
+                android:includeFontPadding="false"
+                android:text="2050531200239"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is main activity"
+                android:textSize="40dp"
+                android:layout_marginTop="80dp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnOpenChildActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0099ff"
+            android:text="Open Child Activity"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="30dp"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>
